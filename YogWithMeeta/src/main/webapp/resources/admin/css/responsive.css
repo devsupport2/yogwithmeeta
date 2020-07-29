@@ -1,0 +1,441 @@
+/* lg */ 
+@media (min-width: 1200px) {
+/* Make Navigation Toggle on Desktop Hover */
+
+
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* Make Navigation Toggle on Desktop Hover */
+
+
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+/* Make Navigation Toggle on Desktop Hover */
+
+
+}
+
+
+
+
+/* xs */
+@media (max-width: 767px) {
+
+#login {
+padding: 0em 0em 0em 0em;
+}
+
+#login .mt-5, .my-5 {
+margin-top: 0rem !important;
+}
+
+
+#Forgot-Password {
+padding: 0em 0em 0em 0em;
+}
+
+
+.sidebar .sidebar-brand .sidebar-brand-icon img {
+max-width: 30%;
+}
+
+.sidebar .nav-item .nav-link {
+text-align: center;
+padding: .75rem 1rem;
+width: auto;
+}
+
+.sidebar .nav-item .nav-link span {
+font-size: 100%;
+display: block;
+}
+
+
+.topbar #sidebarToggleTop:active {
+background-color: rgba(231, 74, 59, .25);
+}
+
+
+.topbar #sidebarToggleTop:hover {
+background-color: rgba(231, 74, 59, .25);
+}
+
+
+.btn-link {
+font-weight: 400;
+color: #b22222;
+text-decoration: none;
+}
+
+.btn-link:hover {
+color: #b22222;
+text-decoration: underline;
+}
+
+
+
+.form-control {
+margin-bottom: 10px;
+}
+
+/*
+.team-members .ss-main {
+width: 88.4%;
+}
+*/
+
+.team-members .ss-main {
+width: 100%;
+}
+
+
+.k-autocomplete.k-state-default, .k-dropdown-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-picker-wrap.k-state-default {
+
+margin-bottom: 12px;
+}
+
+
+
+.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+font-size: 16px;  
+line-height: 22px;
+}
+
+.alert-danger  .box-header.with-border {
+border-bottom: 1px solid #f4f4f445;
+color: #78261f;
+}
+
+
+
+.btn {
+border-radius: 0rem;
+}
+
+
+.card-body {
+-webkit-box-flex: 1;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+padding: 10px 10px 10px 10px;
+font-size: 13px;
+}
+
+.form-control {
+
+margin-bottom: 10px;
+}    
+
+.dataTables_info {
+padding: 0px 0px 10px 0px;
+}
+
+
+
+
+.team-members .ss-main {
+width: 88.4%;
+}
+
+
+    
+.slocation .ss-main {
+width: 87%;
+}
+
+
+.demo .ss-main {
+width: 88.3%;
+}
+
+
+.team-members .ss-main {
+width: 89%;
+}
+
+
+
+
+.sgroup .ss-main {
+width: 87%;
+}
+
+
+
+.esgroups .ss-main {
+width: 88.4%;
+}
+
+
+.esusers .ss-main {
+width: 88.4%;
+}
+
+
+.designation .ss-main {
+width: 88.4%;
+}
+
+    
+    
+    
+
+#task-priority{
+
+}
+
+
+    
+label {
+font-size: 12px;
+}
+
+}
+
+
+
+
+/* XS Portrait */
+@media (max-width: 480px) {
+.sidebar-brand-icon {
+margin: 0 auto;
+text-align: center;
+}
+.sidebar .sidebar-brand .sidebar-brand-icon img {
+max-width: 30%;
+}
+    
+
+
+
+}
+
+
+
+
+/* xs */
+@media (min-width: 650px){
+
+.slocation .ss-main {
+width: 86%;
+}
+
+
+
+.team-members .ss-main {
+width: 86%;
+}
+
+
+    
+.slocation .ss-main {
+width: 86%;
+}
+
+
+.sgroup .ss-main {
+width: 86%;
+}
+
+
+
+.esgroups .ss-main {
+width: 86%;
+}
+
+
+.esusers .ss-main {
+width: 86%;
+}
+
+
+
+     
+}
+
+
+    
+    
+    
+/* xs */
+@media (min-width: 768px){
+
+.slocation .ss-main {
+width: 100%;
+}
+
+
+
+.team-members .ss-main {
+width: 100%;
+}
+
+
+    
+.slocation .ss-main {
+width: 100%;
+}
+
+
+.sgroup .ss-main {
+width: 100%;
+}
+
+
+
+.esgroups .ss-main {
+width: 100%;
+}
+
+
+.esusers .ss-main {
+width: 100%;
+}
+
+     
+}
+
+
+
+
+
+
+/********************************
+ disable landscape mode mobile website 
+********************************/
+
+._1QQpsu {
+position: fixed;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+/*background-color: #3D0000;*/
+
+background: #b22222;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b22222, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b22222, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+z-index: 15;
+pointer-events: none;
+display: none;
+align-items: center;
+justify-content: center;
+}
+
+
+@media (min-width: 375px) and (orientation: landscape) {
+
+._3bWLGx {
+display: flex;
+pointer-events: initial;
+}
+}
+
+.mvW8vq {
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+._1U-Jli{
+background-image: url(../img/rotate_screen_icon.gif);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+width: 30%;
+padding-bottom: 25.5%;
+}
+
+.FqIVIZ {
+color: #f1f1f1;
+font-size: 20px;
+text-align: center;
+margin-bottom: 10px;
+margin-top: 30px;
+}
+
+._1wxP6t {
+color: #f1f1f1;
+font-size: 14px;
+text-align: center;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) and (orientation: landscape) {
+._1QQpsu {
+display: none;
+}
+ 
+   
+}
+
+
+/********************************
+ disable landscape mode mobile website 
+********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************
+IPAD LANDSCAPE (1024x768)
+********************************/
+
+@media only screen and (max-width: 1200px) {
+
+
+
+}
+
+
+
+
+/********************************
+IPAD PORTRAIT (768x1024)
+********************************/
+
+@media only screen and (max-width: 960px) {
+
+
+}
+
+/********************************
+IPHONE 4-4S-5 LANDSCAPE (568x320)
+********************************/
+
+/********************************
+IPHONE 4-4S-5 PORTRAIT (320x568)
+********************************/
+
+@media only screen and (max-width: 450px) {
+
+
+
+}
+
+
+
+
+
+

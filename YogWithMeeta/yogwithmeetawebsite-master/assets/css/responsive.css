@@ -1,0 +1,225 @@
+/* lg */ 
+@media (min-width: 1200px) {
+/* Make Navigation Toggle on Desktop Hover */
+
+
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* Make Navigation Toggle on Desktop Hover */
+
+
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+/* Make Navigation Toggle on Desktop Hover */
+
+
+}
+
+
+
+/* xs */
+@media (max-width: 767px) {
+
+
+
+}
+
+/* XS Portrait */
+@media (max-width: 480px) {
+
+
+}
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+/*
+@media only screen and (min-width:320px) {
+body:after {
+content: "320 to 480px";
+background-color: hsla(90, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}
+}
+*/
+
+@media only screen and (min-width:480px) {
+/*
+body:after {
+content: "480 to 768px";
+background-color: hsla(180, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}
+*/
+
+
+
+#inner-slider .hero-style-2, .hero-style-3 {
+height: calc(100vh - 167px);
+min-height: inherit;
+}
+
+    
+}
+
+
+@media only screen and (min-width:1349px) {
+/*body:after {
+content: "1080px and up";
+background-color: hsla(360, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}*/
+
+#inner-slider .hero-style-2, .hero-style-3 {
+height: calc(70vh - 167px);
+min-height: inherit;
+}
+
+   
+}
+
+/*
+
+
+@media only screen and (min-width:1497px) {
+body:after {
+content: "1080px and up";
+background-color: hsla(360, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}
+    */
+    
+    section.info h2 {
+    font-size: 27px;
+    font-weight: 600;
+    color: red !important;
+    padding-bottom: 0px;
+    line-height: 50px;
+    font-family: 'Century Gothic';
+}
+
+#inner-slider .hero-style-2, .hero-style-3 {
+height: calc(0vh - 167px) !important;
+min-height: inherit;
+}
+
+   
+}
+
+
+
+
+
+
+
+/*
+
+@media only screen and (min-width:768px) {
+body:after {
+content: "768 to 980px";
+background-color: hsla(270, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}
+}
+
+
+
+@media only screen and (min-width:980px) {
+body:after {
+content: "980 to 1024px";
+background-color: hsla(300, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}
+}
+
+
+*/
+
+@media only screen and (min-width:1024px) {
+/*
+body:after {
+content: "1024 and up";
+background-color: hsla(360, 60%, 40%, 0.7);
+height: 20px;
+padding-top: 0;
+margin-left: 0
+}
+*/
+
+.navbar .navbar-nav a.nav-link {
+font-size: 15px;
+}
+   
+}
+
+
+
+
+
+
+
+
+/********************************
+IPAD LANDSCAPE (1024x768)
+********************************/
+
+@media only screen and (max-width: 1200px) {
+
+
+
+}
+
+
+
+
+/********************************
+IPAD PORTRAIT (768x1024)
+********************************/
+
+@media only screen and (max-width: 960px) {
+
+
+}
+
+/********************************
+IPHONE 4-4S-5 LANDSCAPE (568x320)
+********************************/
+
+/********************************
+IPHONE 4-4S-5 PORTRAIT (320x568)
+********************************/
+
+@media only screen and (max-width: 450px) {
+
+
+
+}
+
+
+
+
+
+

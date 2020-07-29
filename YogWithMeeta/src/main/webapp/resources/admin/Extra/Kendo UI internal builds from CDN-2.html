@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled Document</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!--*******-->
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.common-material.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.material.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.material.mobile.min.css" />
+<script src="https://kendo.cdn.telerik.com/2018.1.221/js/jquery.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2018.1.221/js/kendo.all.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+
+<div id="example">
+<div class="demo-section k-content">
+<h4>Remind me on</h4>
+<input id="datetimepicker" title="datetimepicker" style="width: 100%;" />
+</div>
+</div>
+
+
+<!--    <script>
+$(document).ready(function () {
+$("#datetimepicker").kendoDatePicker({
+value: new Date(),
+dateInput: true,
+format: "dd MMMM yyyy"
+});
+});
+
+</script>-->
+
+
+
+<script>
+$(document).ready(function () {
+// create DateTimePicker from input HTML element
+$("#datetimepicker").kendoDateTimePicker({
+value: new Date(),
+dateInput: true
+});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title> Add Schedule </title>
+
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- fonts -->
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+<!-- styles -->
+<link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+<!-- -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">               
+<!-- Custom styles for this page -->
+<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+
+
+<script src="js/slimselect.min.js"></script>
+<link href="css/slimselect.min.css" rel="stylesheet"></link>
+
+
+<!--***ckeditor****-->
+<script src="https://cdn.ckeditor.com/4.12.1/basic/ckeditor.js"></script>
+
+
+<!--***datetimepicker****-->
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.common-material.min.css" />
+<link rel="stylesheet" href="datetimepicker/css/kendo.material.min.css" />
+<link rel="stylesheet" href="datetimepicker/css/kendo.material.mobile.min.css" />
+<script src="datetimepicker/js/jquery.min.js"></script>
+<script src="datetimepicker/js/kendo.all.min.js"></script>
+
+
+<!-- Responsive -->
+<link href="css/responsive.css" rel="stylesheet">
+
+
+<!-- includes js File START-->
+<script src="js/w3data.js"></script>
+<!-- includes js File END-->
+
+
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+<!--/Left Navigation START-->
+<div w3-include-html="includes/left-nav.html"></div> 
+<!--/Left Navigation END-->
+
+<!-- Divider -->
+<hr class="sidebar-divider d-none d-md-block">
+
+<!-- Sidebar Toggler (Sidebar) -->
+<div class="text-center d-none d-md-inline mt-15">
+<button class="rounded-circle border-0" id="sidebarToggle"></button>
+</div> 
+</ul>
+<!-- End of Sidebar -->
+
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+
+
+
+<!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+<!-- Sidebar Toggle (Topbar) -->
+<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+<i class="fa fa-bars"></i>
+</button>
+
+
+
+<!-- Topbar Navbar -->
+<ul class="navbar-nav ml-auto">
+
+
+
+<!-- Nav Item - User Information -->
+<li class="nav-item dropdown no-arrow">
+<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="mr-2 d-none d-lg-inline text-gray-600 small"> Bhargav Bhatt </span>
+<img class="img-profile rounded-circle" src="img/profile-pic.png">
+</a>
+<!-- Dropdown - User Information -->
+<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+<a class="dropdown-item" href="#">
+<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+Profile
+</a>
+<!--<a class="dropdown-item" href="#">
+<i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+Settings
+</a>-->
+<a class="dropdown-item" href="#">
+<i class="fa fa-key mr-2 text-gray-400"></i>
+Change Password
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+Logout
+</a>
+</div>
+</li>
+
+</ul>
+
+
+
+</nav>
+<!-- End of Topbar -->
+
+
+
+
+<div class="container-fluid"> 
+
+<!-- Content Row -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+<!-- Collapsable Card Example -->
+<div class="card shadow mb-4">
+<!-- Card Header - Accordion -->
+<a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+<h6 class="m-0 font-weight-bold text-light"> Add New Schedule </h6>
+</a>
+<!-- Card Content - Collapse -->
+<div class="collapse" id="collapseCardExample">
+<div class="card-body">
+
+
+<form class="">
+
+<div class="form-group row">
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label> Schedule Name </label>
+<input class="form-control" placeholder=" Schedule Name " type="text">
+</div>
+
+<div id="example" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 demo-section k-content">
+<label> Start Date </label>
+<input id="fromdatetimepicker" title="fromdatetimepicker" style="width: 100%;" />
+</div>
+
+<div  id="example" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 demo-section k-content">
+<label> End Date </label>
+<input id="todatetimepicker" title="todatetimepicker" style="width: 100%;" />
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="row">
+
+<div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 team-members">
+<label> Select Schedule  Days  </label>
+<div class="form-group input-group">
+<select id="demo1" multiple>
+<option value="Monday"> Monday </option>
+<option value="Tuesday"> Tuesday </option>
+<option value="Wednesday"> Wednesday </option>
+<option value="Thursday"> Thursday </option>
+<option value="Friday"> Friday </option>
+<option value="Saturday"> Saturday </option>
+<option value="Sunday"> Sunday </option>
+</select>
+<!--<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddUserModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>-->
+</div>
+</div>
+
+
+<div class="col-lg-2 col-md-12 col-sm-6 col-xs-12">
+<label> Select Batch </label>
+<div class="form-group input-group ">
+<select class="form-control">
+<option> Select Batch </option>
+<option> Morning </option>
+<option> Evening </option>
+</select>
+
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" title="Add new Batch" data-toggle="modal" data-target="#" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+    
+<!--<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" title="Add new Batch" data-toggle="modal" data-target="#CreateGroupModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>-->
+
+</div>
+</div>
+
+
+<div class="col-lg-2 col-md-12 col-sm-6 col-xs-12">
+<label> Batch Start Time </label>
+
+<div class="form-group input-group">
+<input disabled type="text" placeholder="8:00 PM" class="form-control">
+<span style="border-radius: 0px 4px 4px 0px;" class="input-group-addon">
+<i class="fa fa-clock-o"></i>
+</span>
+</div>
+</div>
+
+<div class="col-lg-2 col-md-12 col-sm-6 col-xs-12">
+<label> Batch End Time </label>
+
+<div class="form-group input-group">
+<input disabled type="text" placeholder="12:00 PM" class="form-control">
+<span style="border-radius: 0px 4px 4px 0px;" class="input-group-addon">
+<i class="fa fa-clock-o"></i>
+</span>
+</div>
+</div>
+
+</div>
+
+
+
+
+<hr>
+
+<div class="form-group row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a href="#" class="btn btn-md btn-success btn-block">
+Add Schedule </a>
+</div>
+
+</div>
+
+
+
+</form>   
+
+
+</div>
+</div>
+</div>
+
+</div>    
+</div>
+</div>
+
+
+<!-- List All Task Start Content for Desktop & Others   -->
+
+<div class="container-fluid"> 
+<div class="row">
+
+<!-- Earnings (Monthly) Card Example -->
+<div class="col-lg-12 col-md-12  col-sm-12 col-xl-12">  
+<!-- Collapsable Card Example -->
+<div class="card shadow mb-4">
+
+<!-- Card Header -->
+<div class="card-header py-3">
+<h6 class="m-0 font-weight-bold text-primary">
+All Schedule
+</h6>
+</div>
+    
+
+
+
+<!-- Card Content -->
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-sm-12 col-md-12">
+<div class="table-responsive">
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+<thead>
+<tr>
+<th> # </th>
+<th> Schedule Name  </th>
+<th> Start Date  </th>
+<th> End Date  </th>
+<th> Schedule Days </th>
+<th> Batch Time </th>
+<th class="text-center"> Del. </th>
+</tr>
+</thead>
+
+
+<tbody>
+
+
+
+<tr>
+<td> 
+<a data-toggle="modal" data-target="#EditUserModal" href="#">
+1
+</a>
+</td>
+
+
+
+
+<td> 
+<a data-toggle="modal" data-target="#EditUserModal" href="#">
+Schedule Name
+</a>
+</td>
+
+
+
+
+<td> 
+<a data-toggle="modal" data-target="#EditUserModal" href="#">
+29/06/2020
+</a>
+</td>
+
+
+    
+<td>
+<a data-toggle="modal" data-target="#EditUserModal" href="#">
+7/2/2020
+</a>
+</td>
+
+<td>
+<a data-toggle="modal" data-target="#EditUserModal" href="#">
+Morning, Evening
+</a>
+</td>
+
+<td>
+<a data-toggle="modal" data-target="#EditUserModal" href="#">
+10:00 PM To 12:00 PM
+</a>
+</td>
+
+<td class="text-center"> 
+<button type="button" class="btn btn-outline-default btn-sm">
+<i class="fa fa-trash-o txt-danger"></i>
+</button>
+</td>
+</tr>
+
+
+
+
+</tbody>
+
+</table>
+</div>
+</div>
+</div>
+
+<hr class="mt-0">
+
+<div class="row">
+
+<div class="col-sm-12 col-md-5">
+<div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+</div>
+
+<div class="col-sm-12 col-md-7 text-right">
+<div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+<ul class="pagination pull-right">
+<li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+<li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+<li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+<li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+<li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+<li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+<li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+<li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- /.container-fluid -->
+
+
+
+</div>
+<!-- End of Main Content -->
+
+
+<!--/#footer START-->
+<div w3-include-html="includes/footer.html"></div> 
+<!--/#footer END-->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+<i class="fas fa-angle-up"></i>
+</a>
+
+
+
+
+
+<!-- Task Modal-->
+<!-- Modal -->
+<div class="modal fade" id="TaskModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+
+<div style="border-bottom: none;" class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel"> 
+Task: Make a task management system for kadji
+</h5>
+<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+
+<div class="modal-body pa-0">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+
+<div class="card card-tabs-3">
+
+<div class="card-header">
+<ul class="nav nav-tabs">
+
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab-7" role="tab">
+<!--<i class="fa fa-thumb-tack"></i>--> 
+<h6 class="m-0 font-weight-bold text-primary"> Task Details </h6>  
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab-8" role="tab">
+<!--<i class="fa fa-thumb-tack"></i> -->  
+<h6 class="m-0 font-weight-bold text-primary"> Task Logs & Follow </h6>  
+</a>
+</li>
+
+</ul>
+</div>
+
+<div class="card-block">
+<div class="tab-content">
+
+<div class="tab-pane active" id="tab-7">
+
+<div class="row">
+<div class="col-md-12">
+
+<!-- Basic Card Example -->
+<div class="card mb-4">
+<div class="card-header py-3">
+<h6 class="m-0 font-weight-bold text-primary pl-15"> Change Task Status </h6>
+</div>
+<div class="card-body">
+
+
+<div class="form-group mb-0 row">
+<div id="example" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 demo-section k-content">
+<label> Select Date & Time </label>
+<input id="fromdatetimepicker1" title="fromdatetimepicker1" style="width: 100%;" />
+</div>
+
+
+
+<!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<label> Task Status* </label>
+<div class="form-group mb-0">
+<select class="form-control">
+<option> Working </option>
+<option> Done </option>
+</select>
+</div>
+</div>-->
+
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<label> Select Reason </label>
+<div class="form-group mb-0 input-group ">
+<select class="form-control">
+<option selected=""> Reason one </option>
+<option> Reason one </option>
+<option> Reason one </option>
+<option> Reason one </option>
+<option> Reason one </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#CreateGroupModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="funkyradio mt-20">
+
+<h4 class="classic-title">
+<span class="weight-600"> Update Task Status 1 to 10 </span>
+</h4>
+
+<div class="funkyradio-danger">
+<input type="checkbox" name="checkbox" id="checkbox1" checked/>
+<label for="checkbox1"><strong> 01 </strong></label>
+</div>
+
+<div class="funkyradio-danger">
+<input type="checkbox" name="checkbox" id="checkbox2" checked/>
+<label for="checkbox2"><strong> 02 </strong></label>
+</div>
+
+<div class="funkyradio-danger">
+<input type="checkbox" name="checkbox" id="checkbox3" checked/>
+<label for="checkbox3"><strong> 03 </strong></label>
+</div>
+
+<div class="funkyradio-warning">
+<input type="checkbox" name="checkbox" id="checkbox4" />
+<label for="checkbox4"> <strong> 04 </strong> </label>
+</div>
+
+<div class="funkyradio-warning">
+<input type="checkbox" name="checkbox" id="checkbox5" />
+<label for="checkbox5"><strong> 05 </strong></label>
+</div>
+
+<div class="funkyradio-warning">
+<input type="checkbox" name="checkbox" id="checkbox6" />
+<label for="checkbox6"><strong> 06 </strong></label>
+</div>
+
+
+<div class="funkyradio-warning">
+<input type="checkbox" name="checkbox" id="checkbox7" />
+<label for="checkbox7"><strong> 07 </strong></label>
+</div>
+
+<div class="funkyradio-success">
+<input type="checkbox" name="checkbox" id="checkbox8" />
+<label for="checkbox8"><strong> 08 </strong></label>
+</div>
+
+<div class="funkyradio-success">
+<input type="checkbox" name="checkbox" id="checkbox9" />
+<label for="checkbox9"><strong> 09 </strong></label>
+</div>
+
+<div class="funkyradio-success">
+<input type="checkbox" name="checkbox" id="checkbox10" />
+<label for="checkbox10"><strong> 10 </strong></label>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+<hr class="mt-5">
+
+<form class="">
+<div class="form-group row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label> Task Title </label>
+<input class="form-control" placeholder=" Task Title " type="text" value="Make a task management system for kadji ">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label> Task Subtitle </label>
+<input class="form-control" placeholder="Task Subtitle " type="text" value="Task Subtitle: (tesk Subtitle text here...)">
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Select Group </label>
+<div class="form-group input-group ">
+<select class="form-control">
+<option selected> Group one </option>
+<option> Group 2 </option>
+<option> Group 3 </option>
+<option> Group 4 </option>
+<option> Group 5 </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#CreateGroupModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+
+
+<div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
+<label> Select Team Members </label>
+<div class="form-group input-group ">
+<select  style="width: 94%;" id="demo" multiple>
+<option value="value 1"> Lalu Patanvadiya </option>
+<option value="value 2"> Ajay Sharma </option>
+<option value="value 3"> Tushar Purani </option>
+<option value="value 4"> Bhavin Akolkar </option>
+<option value="value 5"> Ankit Shah </option>
+<option value="value 6"> Mayur M </option>
+<option value="value 7"> Sunil A </option>
+<option value="value 8"> Pratik Thakkar </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="form-group row">
+<div id="example" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 demo-section k-content">
+<label> From Date & Time </label>
+<input id="fromdatetimepickeredit" title="fromdatetimepickeredit" style="width: 100%;" />
+</div>
+
+<div  id="example" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 demo-section k-content">
+<label> To Date & Time </label>
+<input id="todatetimepickeredit" title="todatetimepickeredit" style="width: 100%;" />
+</div>
+
+
+<div id="task-priority" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<label> Task Priority </label>
+<fieldset>
+
+<div class="radio radio-default radio-inline  pr-5 pl-5">
+<input type="radio" id="nop" value="option1" name="radioInline">
+<label style="padding-left: 1px;"  class="font-11" for="nop"> No Priority </label>
+</div>
+
+<div class="radio radio-danger radio-inline pr-5 pl-5">
+<input type="radio" id="highp" value="option1" name="radioInline"  checked="">
+<label style="padding-left: 1px;"  class="font-11" for="highp"> High </label>
+</div>
+
+
+<div class="radio radio-warning radio-inline pr-5 pl-5">
+<input type="radio" id="mediump" value="option1" name="radioInline">
+<label style="padding-left: 1px;"  class="font-11" for="mediump"> Medium </label>
+</div>
+
+
+<div style="border-right:none;" class="radio radio-success radio-inline pr-5 pl-5">
+<input type="radio" id="lowp" value="option1" name="radioInline">
+<label style="padding-left: 1px;" class="font-11" for="lowp"> Low </label>
+</div>
+
+</fieldset>
+</div>
+
+</div>
+
+
+
+
+<div class="form-group row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<label>  Task Description  </label>
+<textarea cols="80" id="editor2" name="editor2" rows="10" data-sample-short>
+&lt;p&gt; Lorem Ipsum is simply dummy  &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href=&quot; Lorem Ipsum is simply dummy  &quot;&gt; Lorem Ipsum is simply dummy &lt;/a&gt;.&lt;/p&gt;
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</textarea>
+</div>
+</div>
+
+
+
+
+
+
+<hr>
+
+<div class="form-group mb-0 row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a href="#" class="btn btn-md btn-success btn-block">
+Update Task
+</a>
+</div>
+
+</div>
+
+
+
+</form>   
+
+
+</div>
+
+
+<div class="tab-pane" id="tab-8">
+<div class="row">
+
+<!--Task Log-->
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<!-- Default Card Example -->
+<div class="card mb-4">
+<div style="padding:8px 0px 8px 12px;" class="card-header weight-600">
+Task Enquiry
+</div>
+
+<div class="card-body">
+
+
+<div class="form-group mb-0 row">
+<div id="example" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 demo-section k-content">
+<label> Task Log  Date & Time* </label>
+<input id="fromdatetimepicker2" title="fromdatetimepicker2" style="width: 100%;" />
+</div>
+</div>
+
+
+<div class="input-group mt-15">
+<textarea style="padding-left: 10px;" class="form-control custom-control" rows="3" placeholder="Task Log..."></textarea> 
+<span class="input-group-btn">
+<button style="border-radius: 0rem .3rem .3rem 0rem; padding: 60% 20px 60% 15px;" class="btn btn-primary">                            
+<i class="fa fa-arrow-right"></i>
+</button>
+</span>
+</div>
+
+
+<hr class="mt-15">
+
+<!-- Conversations are loaded here -->
+<div class="direct-chat-messages">
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> Had a personal meeting today at his office. And as per him, he is looking to manage his business and not inquiries or clients. He will list down his requirements and will come back to us. </p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> Called you for a follow up but you could not pick up the call. </p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> He may go through demo tomorrow during my personal visit to his office.</p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> Enquiry created </p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+</div><!--/.direct-chat-messages-->
+
+</div>
+
+</div>
+</div>
+<!--Task Log-->
+
+
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<!-- Default Card Example -->
+<div class="card mb-4">
+<div style="padding:8px 0px 8px 12px;" class="card-header  weight-600">
+Task Follow-Up 
+</div>
+
+<div class="card-body">
+
+
+<div class="form-group mb-0 row">
+<div id="example" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 demo-section k-content">
+<label> Task Follow-Up  Date & Time* </label>
+<input id="fromdatetimepicker3" title="fromdatetimepicker3" style="width: 100%;" />
+</div>
+</div>
+
+
+<div class="input-group mt-15">
+<textarea style="padding-left: 10px;" class="form-control custom-control" rows="3" placeholder="Remark..."></textarea> 
+<span class="input-group-btn">
+<button style="border-radius: 0rem .3rem .3rem 0rem; padding: 60% 20px 60% 15px;" class="btn btn-primary">                            
+<i class="fa fa-arrow-right"></i>
+</button>
+</span>
+</div>
+
+
+<hr class="mt-15">
+
+<!-- Conversations are loaded here -->
+<div class="direct-chat-messages">
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> Had a personal meeting today at his office. And as per him, he is looking to manage his business and not inquiries or clients. He will list down his requirements and will come back to us. </p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> Called you for a follow up but you could not pick up the call. </p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> He may go through demo tomorrow during my personal visit to his office.</p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+
+
+<!-- Message. Default to the left -->
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left"> Astar Technologies </span>
+<span class="direct-chat-timestamp pull-right"> 23 Jan 2:00 pm </span>
+</div><!-- /.direct-chat-info -->
+<div class="direct-chat-text">
+<p class="mb-0"> Enquiry created </p>
+</div><!-- /.direct-chat-text -->
+</div><!-- /.direct-chat-msg -->
+
+</div><!--/.direct-chat-messages-->
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="modal-footer">
+<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+<!--<a class="btn btn-primary" href="login.html">Logout</a>-->
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<!-- Create Group Modal-->
+<!-- Modal -->
+<div class="modal fade" id="CreateGroupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel"> Create New Group </h5>
+<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+<label> Group Name </label>
+<div class="form-group input-group ">
+<input type="text" class="form-control" placeholder="Group Name ">
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" class="btn btn-primary" type="button">
+ADD
+</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<!--  Add new User Modal-->
+<div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel"> Add new User  </h5>
+<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+
+<div class="modal-body">
+
+<form class="">
+
+
+<div class="form-group row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label> First Name </label>
+<input class="form-control" placeholder="First Name" type="text">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label> Last Name </label>
+<input class="form-control" placeholder="Last Name" type="text">
+</div>
+</div>
+
+
+
+
+<div class="form-group row">
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Email </label>
+<input class="form-control" placeholder="Email Address" type="text">
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Password </label>
+<input class="form-control" placeholder="Password" type="text">
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Mobile #  </label>
+<input class="form-control" placeholder="Enter Mobile No." type="text">
+</div>
+
+
+</div>
+
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Gender </label>
+<select class="form-control">
+<option> Male </option>
+<option> Female </option>
+</select>
+</div>
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Date of Birth </label>
+<input class="form-control" type="text"  placeholder="DD/MM/YYYY"  data-mask="99/99/9999" />
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> PAN </label>
+<input class="form-control" placeholder="PAN Card No." type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Aadhar Card No. </label>
+<input class="form-control" type="text"  placeholder="0123/4567/8910"  data-mask="9999/9999/9999" />
+</div>
+
+</div>
+
+
+<hr>
+
+<div class="form-group row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a href="#" class="btn btn-md btn-success btn-block">
+Submit
+</a>
+</div>
+
+</div>
+
+
+
+</form>   
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+
+<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+<a class="btn btn-primary" href="login.html">Logout</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- includes function START-->
+<script>
+w3IncludeHTML();
+</script>
+<!-- includes function END-->  
+
+
+
+<!-- Bootstrap  JavaScript-->
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core  JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!--inputmask-->
+<script src="js/bootstrap-inputmask.js"></script>
+
+
+
+<!-- Page level plugins -->
+<!--<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>-->
+
+<!-- Page level custom scripts -->
+<!--<script src="js/demo/datatables-demo.js"></script>-->
+
+
+
+<!--***********************************-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<script>
+$('.select2').select2();
+</script>
+
+
+</body>
+
+</html>

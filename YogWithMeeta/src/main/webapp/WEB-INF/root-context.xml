@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="springDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
+		
+		<!-- <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://ultrasmartsolutions.com/iltruasa_eyowithmedtabg" />  
+		<property name="username" value="iltruasa_ywmeetadbusr" />
+		<property name="password" value="m@nAg!87654YWM^db" /> -->	
+		
+		<!-- <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://yogwithmeeta.com/whogyith_eyowithmedtabg"/>
+		<property name="username" value="whogyith_ywmeetadbusr" />
+		<property name="password" value="m@nAg!87654YWM^db" /> -->
+		
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ywm"/>
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+		
+		<property name="maxIdle" value="100"/>
+		<property name="minIdle" value="10"/>
+   		<property name="validationQuery" value="select curdate()"/>
+   		<property name="removeAbandoned" value="true"/>
+   		<property name="initialSize" value="20" />
+   		<property name="maxActive" value="30" />		
+	</bean>	
+	<bean id="loginImpl" class="com.ui.dao.impl.LoginDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="batchImpl" class="com.ui.dao.impl.BatchDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="scheduleImpl" class="com.ui.dao.impl.ScheduleDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="currencyImpl" class="com.ui.dao.impl.CurrencyDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="courseImpl" class="com.ui.dao.impl.CourseDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="countryImpl" class="com.ui.dao.impl.CountryDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="stateImpl" class="com.ui.dao.impl.StateDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="userImpl" class="com.ui.dao.impl.UserDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="paymentImpl" class="com.ui.dao.impl.PaymentDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="galleryImpl" class="com.ui.dao.impl.GalleryDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="mixImpl" class="com.ui.dao.impl.MixDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+</beans>
